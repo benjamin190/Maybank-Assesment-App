@@ -1,0 +1,9 @@
+<h1>Welcome!</h1>
+<div [hidden]="!authenticated()">
+  <p>Navigate to view transactions records:
+    <a href="/transactions">Transactions</a>
+  </p>
+</div>
+<div [hidden]="authenticated()">
+  <p>Please login to access transactions data.</p>
+</div>
