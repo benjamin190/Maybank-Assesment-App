@@ -11,7 +11,7 @@ import { finalize } from 'rxjs/operators';
 })
 export class AppComponent {
   constructor(private app: AppService, private http: HttpClient, private router: Router) {
-      this.app.authenticate(undefined, undefined);
+      //this.app.authenticate(undefined, undefined);
     }
 
     logout(): any {
@@ -19,7 +19,6 @@ export class AppComponent {
           this.app.authenticated = false;
           localStorage.clear();
           this.router.navigateByUrl('/login');
-          console.log("Logged out")
       })).subscribe();
     }
 

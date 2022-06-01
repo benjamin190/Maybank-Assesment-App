@@ -18,7 +18,6 @@ export class AppService {
 
         this.http.get('user', {headers: headers}).subscribe(
         response => {
-            console.log("authenticate response: "+response['name']);
             if (response['name']) {
                 this.authenticated = true;
             } else {

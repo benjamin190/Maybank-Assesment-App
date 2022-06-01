@@ -1,7 +1,7 @@
 <h1>Welcome!</h1>
 <div [hidden]="!authenticated()">
   <p>Navigate to view transactions records:
-    <a href="/transactions">Transactions</a>
+    <a routerLink="/transactions">Transactions</a>
   </p>
 </div>
 <div [hidden]="authenticated()">
